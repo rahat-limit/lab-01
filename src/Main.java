@@ -13,7 +13,9 @@ public class Main {
 //    ---------------Task 5-------------------------
 //    System.out.println(Task5.task());
 //    ---------------Task 6-------------------------
-    System.out.println(Task6.task());
+//    System.out.println(Task6.task());
+//    ---------------Task 7-------------------------
+    System.out.println(Task7.task());
 
   }
 }
