@@ -1,6 +1,7 @@
 import Tasks.Task1;
 import Tasks.Task2;
 import Tasks.Task3;
+import Tasks.Task4;
 
 public class Main {
   public static void main(String[] args) {
@@ -9,7 +10,9 @@ public class Main {
 //    ---------------Task 2-------------------------
 //    System.out.println(Task2.task());
 //    ---------------Task 3-------------------------
-    System.out.println(Task3.task());
+//    System.out.println(Task3.task());
+//    ---------------Task 3-------------------------
+    System.out.println(Task4.task());
 
   }
 }
