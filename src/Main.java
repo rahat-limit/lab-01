@@ -1,7 +1,4 @@
-import Tasks.Task1;
-import Tasks.Task2;
-import Tasks.Task3;
-import Tasks.Task4;
+import Tasks.*;
 
 public class Main {
   public static void main(String[] args) {
@@ -11,8 +8,10 @@ public class Main {
 //    System.out.println(Task2.task());
 //    ---------------Task 3-------------------------
 //    System.out.println(Task3.task());
-//    ---------------Task 3-------------------------
-    System.out.println(Task4.task());
+//    ---------------Task 4-------------------------
+//    System.out.println(Task4.task());
+//    ---------------Task 5-------------------------
+    System.out.println(Task5.task());
 
   }
 }
