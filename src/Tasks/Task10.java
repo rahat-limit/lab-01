@@ -1,6 +1,16 @@
 package Tasks;
 import java.util.Scanner;
 
+/**
+* Function euclidGCDAlgoReq get input parameters.
+* @return this function returns int GCD.
+*/
+/**
+* Function task get input parameters.
+* @param array is list of integers due to .
+* @return this function returns String due to Function euclidGCDAlgoReq.
+*/
+
 public class Task10 {
   public static int euclidGCDAlgoReq(int a, int b) {
     if (b == 0) return a;
