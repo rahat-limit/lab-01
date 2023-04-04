@@ -1,11 +1,18 @@
 package Tasks;
 import java.util.Scanner;
+
 /**
- * Task 1. Contains recursive function min() which finding minimum of given numbers and using 2 parameters arr and n.    .
- * @param arr is an array of received digits of which you need to find minimum digit.
- * @param n is the length of an array of digits.
- * @return this function returns minimum of given numbers.
- */
+* Function task get input parameters.
+* @param arr is an array of received digits of which you need to find minimum digit.
+* @param n is the length of an array of digits.
+* @return this function returns minimum of given numbers.
+*/
+
+/**
+* Function findMinValue that returns average of array.
+* @param arr is an array of received digits of which you need to find minimum digit.
+* @param n is the length of an array of digits.
+*/
 
 public class Task1 {
   public static String task() {
