@@ -1,14 +1,23 @@
 package Tasks;
 import java.util.Scanner;
 
+/**
+* Function task get input parameters.
+* @param n is input number.
+* @param arr is an array of fibonacci digits.
+* @return this function returns fibonacci number.
+*/
+/**
+* Function fibonacci that returns fibonacci number of variable n.
+* @param arr is an array of fibonacci digits.
+* @param n is input number
+*/
+
 public class Task5 {
   public static String task() {
     Scanner scan = new Scanner(System.in);
-//  @scan - get user input   
     int n = scan.nextInt();
-//  @n - input integer
     int[] array = new int[n + 1];
-//  @array - list of fibonacci sequence using recursion
     for (int i = 0; i < n + 1; i++) {
       array[i] = fibonacci(i);
     }
