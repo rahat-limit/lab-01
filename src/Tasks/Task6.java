@@ -1,6 +1,21 @@
 package Tasks;
 import java.util.Scanner;
 
+/**
+* Function task get input parameters.
+* @param n is input number.
+* @param n is input number
+* @param arr is an arr of input digits.
+* @return this function returns powered number.
+*/
+/**
+* Function findPower that returns fibonacci number of variable n.
+* @param arr is an arr of input digits.
+* @param n is input number
+* @param a is input number
+*/
+
+
 public class Task6 {
   public static String task() {
     Scanner scan = new Scanner(System.in);
