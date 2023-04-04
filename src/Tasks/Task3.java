@@ -1,13 +1,20 @@
 package Tasks;
 
 import java.util.Scanner;
+/**
+* Function task get input parameters.
+* @param n is input number
+* @return this function determine prime numbers.
+*/
+/**
+* Function isPrime that determine prime numbers.
+* @param n is input number
+*/
 
 public class Task3 {
   public static String task() {
     Scanner scan = new Scanner(System.in);
-//  @scan - get user input
     int n = scan.nextInt();
-//  n - get input integer
     if (isPrime(n, 2)) {
       return "Prime";
     } else {
