@@ -1,12 +1,20 @@
 package Tasks;
 import java.util.Scanner;
 
+/**
+* Function task get input parameters.
+* @param n is input number.
+* @return this function returns factorial number.
+*/
+/**
+* Function factorial that returns factorial number of variable n.
+* @param n is input number
+*/
+
 public class Task4 {
   public static String task() {
     Scanner scan = new Scanner(System.in);
-//  @scan - get user input   
     int n = scan.nextInt();
-//  @n get factorial number
     
     return "" + factorial(n);
   }
