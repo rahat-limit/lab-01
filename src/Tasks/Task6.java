@@ -4,7 +4,9 @@ import java.util.Scanner;
 public class Task6 {
   public static String task() {
     Scanner scan = new Scanner(System.in);
+//  @scan - get user input   
     int[] arr = new int[2];
+//  @arr - list of 2 integers 
     for (int i = 0; i < 2; i++) {
       arr[i] = scan.nextInt();
     }
@@ -18,6 +20,7 @@ public class Task6 {
     } else if (n == 1) {
       return a;
     } else {
+//    conditions due to avoid possible errors
       return a * findPower(a, n - 1);
     }
   }
