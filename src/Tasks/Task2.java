@@ -3,9 +3,9 @@ package Tasks;
 import java.util.Scanner;
 /**
 * Function task get input parameters.
-* @param arr is an array of received digits of which you need to find minimum digit.
+* @param arr is an array of received digits of which you need to find average digit.
 * @param n is the length of an array of digits.
-* @return this function returns minimum of given numbers.
+* @return this function returns average of given numbers.
 */
 /**
 * Function findAverage that returns average of array.
@@ -16,11 +16,8 @@ import java.util.Scanner;
 public class Task2 {
   public static String task() {
     Scanner scan = new Scanner(System.in);
-//  @param scan - get input data
     int n = scan.nextInt();
-//  @param n - length of list
     int[] array = new int[n];
-//  @param array - list of integers   
     for (int i = 0; i < n; i++) {
       array[i] = scan.nextInt();
     }
