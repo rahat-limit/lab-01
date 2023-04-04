@@ -1,6 +1,17 @@
 package Tasks;
 import java.util.Scanner;
 
+/**
+* Function task get input parameters.
+* @param array is an arr of input digits.
+* @return this function returns number.
+*/
+/**
+* Function binCoefficient that returns String due to formula.
+* @param array is an array of input digits.
+* @return number binomial coefficient
+*/
+
 public class Task9 {
   public static int binCoefficient(int n, int k) {
     if (k == n) return 1;
@@ -13,9 +24,7 @@ public class Task9 {
   }
   public static String task() {
     Scanner scan = new Scanner(System.in);
-//  @ scan - get user input   
     int[] array = new int[2];
-//  @ array - list of 2 integers   
     for (int i = 0; i < 2; i++) {
       array[i] = scan.nextInt();
     }
