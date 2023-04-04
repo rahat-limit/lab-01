@@ -9,7 +9,7 @@ import java.util.Scanner;
 */
 /**
 * Function findAverage that returns average of array.
-* @param arr is an array of received digits of which you need to find minimum digit.
+* @param arr is an array of received digits.
 * @param n is the length of an array of digits.
 */
 
