@@ -68,8 +68,22 @@ public static boolean isPrime(int n, int d) {
   return isPrime(n, d + 1);
 }
 ```
+## ✖️ Task 4 [(source)](https://github.com/rahat-limit/lab-01/blob/master/src/Tasks/Task4.java/)
+### Task:
+You are given a number “n”, write the program using recursion for finding “n!”
+### Explanation:
+Function **factorial(int n)** takes input integer and returns factorial of n-integer using recursion. If the current index n is <= 1 return 1. Else return n * factorial(n - 1).
+### Solution:
+```java
+public static int factorial(int n) {
+    if (n <= 1) {
+      return 1;
+    }
+//  condition get rid of possible errors
+    return n * factorial(n - 1);
+}
+```
 
-Task 4. You are given a number “n”, write the program using recursion for finding “n!”
 Task 5. You are given a number “n”, write the function for finding n-th elements in Fibonacci sequence using recursion. (Fn = Fn-1+ Fn-2). F0= 0, F1 = 1.
 Task 6. You are given numbers “a” and “n”, write the function that returns “an”.
 Task 7. You are given a number “n” and an array of “n” elements, write the program that returns given array in reverse order without using array data structure.
