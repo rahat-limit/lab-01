@@ -185,5 +185,18 @@ public static int binCoefficient(int n, int k) {
   };
 }
 ```
+## ✖️ Task 10 [(source)](https://github.com/rahat-limit/lab-01/blob/master/src/Tasks/Task10.java/)
+### Task:
+You are given “a” and “b”, write the function for finding GCD(a, b) using recursion. (Hint: Euclidean Algorithm)
+### Explanation:
+Function **euclidGCDAlgoReq(int a, int b)** takes input integer a and integer b returns great common divisor by recursion. If the current index b is equal 0 then return a. Else return euclidGCDAlgoReq(b, a % b).
+### Solution:
+```java
+public static int euclidGCDAlgoReq(int a, int b) {
+  if (b == 0) return a;
+//  return initial value if b == 0
+  return euclidGCDAlgoReq(b, a % b);
+//  find great common divisor by recursion
+}
+```
 
-Task 10. You are given “a” and “b”, write the function for finding GCD(a, b) using recursion. (Hint: Euclidean Algorithm)
