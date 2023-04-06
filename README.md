@@ -83,8 +83,25 @@ public static int factorial(int n) {
     return n * factorial(n - 1);
 }
 ```
+## ✖️ Task 5 [(source)](https://github.com/rahat-limit/lab-01/blob/master/src/Tasks/Task5.java/)
+### Task:
+You are given a number “n”, write the function for finding n-th elements in Fibonacci sequence using recursion. (Fn = Fn-1+ Fn-2). F0= 0, F1 = 1.
+### Explanation:
+Function **fibonacci(int n)** takes input integer returns n-th element of array of fibonacci numbers using recursion. If the current index n is 0 then 0 or n is 1 return 1. Else return fibonacci(n - 1) + fibonacci(n - 2) to find fibonacci number;
+### Solution:
+```java
+public static int fibonacci(int n) {
+  if (n == 0) {
+    return 0;
+  } else if (n == 1) {
+    return 1;
+  } else {
+//    conditions due to avoid possible errors
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  }
+}
+```
 
-Task 5. You are given a number “n”, write the function for finding n-th elements in Fibonacci sequence using recursion. (Fn = Fn-1+ Fn-2). F0= 0, F1 = 1.
 Task 6. You are given numbers “a” and “n”, write the function that returns “an”.
 Task 7. You are given a number “n” and an array of “n” elements, write the program that returns given array in reverse order without using array data structure.
 Task 8. You are given a string “s”, write the function for checking whether “s” is all consists of digits.
