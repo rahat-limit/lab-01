@@ -121,8 +121,25 @@ public static int findPower(int a, int n) {
   }
 }
 ```
-
-Task 7. You are given a number “n” and an array of “n” elements, write the program that returns given array in reverse order without using array data structure.
+## ✖️ Task 7 [(source)](https://github.com/rahat-limit/lab-01/blob/master/src/Tasks/Task7.java/)
+### Task:
+You are given a number “n” and an array of “n” elements, write the program that returns given array in reverse order without using array data structure.
+### Explanation:
+Function **reverse(int n, int[] arr)** takes input arr and its length and returns reversed using recursion. If the current index n is arr length return nothing (empty string). Else call reverse(n + 1, arr), only then print reversed array values.
+### Solution:
+```java
+public static String reverse(int n, int[] arr) {
+  if (n == arr.length) {
+//    condition to stop recursion
+    return "";
+  } else {
+    
+    System.out.print(arr[n] + " ");
+//    print each integer of reversed list
+    return "";
+  }
+}
+```
 Task 8. You are given a string “s”, write the function for checking whether “s” is all consists of digits.
 Task 9. You are given numbers“n” and “k”,write the program that
 k k k−1 k 0 n finds Cn(binomial coefficient) using formulaCn=Cn−1+Cn−1where Cn=Cn=1.
