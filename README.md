@@ -1,11 +1,11 @@
 # First Assignment Documentation
-Welcome to my respository, which I created due to ADS lessons. Here you can easily find some tasks with their explanations. Home you like it🤙
+Welcome to my respository, which I created due to ADS lessons. Here you can easily find some tasks with their explanations. Hope you like it🤙
 ## Main File Main.java [(source)](https://github.com/rahat-limit/lab-01/blob/master/src/Main.java/)
 **All tasks in lab-01 works the same way. Lines to start each task are commented, only thing is needed to uncomment exact task of various different.**
 ## ✖️ Task 1 [(source)](https://github.com/rahat-limit/lab-01/blob/master/src/Tasks/Task1.java/)
 **Task**
 You are given a number “n” and an array of “n” elements, write the function that returns minimum of them.
-###Solution###
+### Solution
 ```java
 public static int findMinValue(int[] array, int n) {
   if (n==1) {
