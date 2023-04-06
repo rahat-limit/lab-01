@@ -168,6 +168,22 @@ static boolean isNum(String s) {
   }
 }
 ```
-Task 9. You are given numbers“n” and “k”,write the program that
-k k k−1 k 0 n finds Cn(binomial coefficient) using formulaCn=Cn−1+Cn−1where Cn=Cn=1.
+## ✖️ Task 9 [(source)](https://github.com/rahat-limit/lab-01/blob/master/src/Tasks/Task9.java/)
+### Task:
+You are given numbers“n” and “k”,write the program that k k k−1 k 0 n finds Cn(binomial coefficient) using formulaCn=Cn−1+Cn−1where Cn=Cn=1.
+### Explanation:
+Function **binCoefficient(int n, int k)** takes input integer n and integer k returns bincoefficient using recursion. If the current index k is equal n then return 1 or k is equal 0 return 1. Else call function binCoefficient(n-1, k-1) + binCoefficient(n-1, k).
+### Solution:
+```java
+public static int binCoefficient(int n, int k) {
+  if (k == n) return 1;
+//  return 1 in case k == n, due to formula C(n,k) = n! / ((n-k)! * k!)
+  return switch (k) {
+    case 0 -> 1;
+//  return 1 in case k == 0, due to formula C(n,k) = n! / ((n-k)! * k!)
+    default -> binCoefficient(n-1, k-1) + binCoefficient(n-1, k);
+  };
+}
+```
+
 Task 10. You are given “a” and “b”, write the function for finding GCD(a, b) using recursion. (Hint: Euclidean Algorithm)
