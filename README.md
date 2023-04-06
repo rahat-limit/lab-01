@@ -42,27 +42,33 @@ public static double findAverage(int[] array, int n) {
   }
 }
 ```
-## ✖️ Task 3 ([source]) (https://github.com/rahat-limit/lab-01/blob/master/src/Tasks/Task3.java/)
+## ✖️ Task 3 [(source)](https://github.com/rahat-limit/lab-01/blob/master/src/Tasks/Task3.java/)
 ### Task:
-You are given a number “n” and an array of “n” elements, write the function that returns minimum of them.
+You are given a number “n”, write the function for checking whether“n” is prime.
 ### Explanation:
-Function **findMinValue(int[] array, int n)** takes input array and its length and returns minimum in the array using recursion. If the current index n is 1 then set minimum=array[0] and return minimum. Else set minimum = minimum of array[n] or findMinValue(array,n-1) and return it.
+Function **isPrime(int n, int d)** takes input integer and its index and returns boolean value using recursion. If the current n <= 1 or index < 2 then return flag = false. Else If n % index == 0 and n != index set flag = false, return flag. Else if n == index return flag. Finally after couple of conditions return function isPrime(n, d + 1).
 ### Solution:
 ```java
-public static int findMinValue(int[] array, int n) {
-  if (n==1) {
-    return array[0];
-//    return last element
-  }else {
-    int min = findMinValue(array, n - 1);
-    return Math.min(min, array[n-1]);
-//    return minimum value of 2
+public static boolean isPrime(int n, int d) {
+  boolean flag = true;
+  if (n <= 1 || d < 2) {
+//    condition to determine composite integers
+    flag = false;
+    return flag;
   }
+  if (n % d == 0 && n != d) {
+//    condition to determine composite integers
+    flag = false;
+    return flag;
+  }
+  if (d == n) {
+//    end of recursion   
+    return flag;
+  }
+  return isPrime(n, d + 1);
 }
 ```
 
-Task 2. - 
-Task 3. You are given a number “n”, write the function for checking whether“n” is prime.
 Task 4. You are given a number “n”, write the program using recursion for finding “n!”
 Task 5. You are given a number “n”, write the function for finding n-th elements in Fibonacci sequence using recursion. (Fn = Fn-1+ Fn-2). F0= 0, F1 = 1.
 Task 6. You are given numbers “a” and “n”, write the function that returns “an”.
