@@ -42,7 +42,24 @@ public static double findAverage(int[] array, int n) {
   }
 }
 ```
-
+## ✖️ Task 3 ([source]) (https://github.com/rahat-limit/lab-01/blob/master/src/Tasks/Task3.java/)
+### Task:
+You are given a number “n” and an array of “n” elements, write the function that returns minimum of them.
+### Explanation:
+Function **findMinValue(int[] array, int n)** takes input array and its length and returns minimum in the array using recursion. If the current index n is 1 then set minimum=array[0] and return minimum. Else set minimum = minimum of array[n] or findMinValue(array,n-1) and return it.
+### Solution:
+```java
+public static int findMinValue(int[] array, int n) {
+  if (n==1) {
+    return array[0];
+//    return last element
+  }else {
+    int min = findMinValue(array, n - 1);
+    return Math.min(min, array[n-1]);
+//    return minimum value of 2
+  }
+}
+```
 
 Task 2. - 
 Task 3. You are given a number “n”, write the function for checking whether“n” is prime.
