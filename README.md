@@ -101,8 +101,27 @@ public static int fibonacci(int n) {
   }
 }
 ```
+## ✖️ Task 6 [(source)](https://github.com/rahat-limit/lab-01/blob/master/src/Tasks/Task6.java/)
+### Task:
+You are given numbers “a” and “n”, write the function that returns “a^n”.
+### Explanation:
+Function **findPower(int a, int n)** takes input integer a and integer b and returns powered by n integer a using recursion. If the current index a is 0 return 0. Else If a is or n is 0 return 1. Else if n is 1 return a. Else return a * findPower(a, n - 1);
+### Solution:
+```java
+public static int findPower(int a, int n) {
+  if (a == 0) {
+    return 0;
+  } else if (a == 1 || n == 0) {
+    return 1;
+  } else if (n == 1) {
+    return a;
+  } else {
+//    conditions due to avoid possible errors
+    return a * findPower(a, n - 1);
+  }
+}
+```
 
-Task 6. You are given numbers “a” and “n”, write the function that returns “an”.
 Task 7. You are given a number “n” and an array of “n” elements, write the program that returns given array in reverse order without using array data structure.
 Task 8. You are given a string “s”, write the function for checking whether “s” is all consists of digits.
 Task 9. You are given numbers“n” and “k”,write the program that
