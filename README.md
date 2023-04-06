@@ -6,7 +6,7 @@ Welcome to my respository, which I created due to ADS lessons. Here you can easi
 ### Task:
 You are given a number “n” and an array of “n” elements, write the function that returns minimum of them.
 ### Explanation:
-Function *** findMinValue(int[] array, int n) *** takes input array and its length and returns minimum in the array using recursion. If the current index n is 1 then set minimum=array[0] and return minimum. Else set minimum = minimum of array[n] or findMinValue(array,n-1) and return it.
+Function **findMinValue(int[] array, int n)** takes input array and its length and returns minimum in the array using recursion. If the current index n is 1 then set minimum=array[0] and return minimum. Else set minimum = minimum of array[n] or findMinValue(array,n-1) and return it.
 ### Solution:
 ```java
 public static int findMinValue(int[] array, int n) {
