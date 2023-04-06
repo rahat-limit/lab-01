@@ -140,7 +140,34 @@ public static String reverse(int n, int[] arr) {
   }
 }
 ```
-Task 8. You are given a string “s”, write the function for checking whether “s” is all consists of digits.
+## ✖️ Task 8 [(source)](https://github.com/rahat-limit/lab-01/blob/master/src/Tasks/Task8.java/)
+### Task:
+You are given a string “s”, write the function for checking whether “s” is all consists of digits.
+### Explanation:
+Function **recFunction(String[] arr, int pos,  int stop)** takes input array, its positions and length and returns String Yes or no using recursion. If the current index pos is less than length integer stop and by function IsNum check each letter and if condition is positive return recFunction(arr, ++pos, stop), else No.
+### Solution:
+```java
+static String recFunction(String[] arr, int pos,  int stop) {
+  if (pos < stop) {
+//    condition to stop recursion   
+    if (isNum(arr[pos])) {
+      return recFunction(arr, ++pos, stop);
+    } else {
+      return "No";
+    }
+  }
+  return "Yes";
+}
+static boolean isNum(String s) {
+  try {
+    Integer.parseInt(s);
+    return true;
+//    Condition check is number format   
+  } catch (NumberFormatException e) {
+    return false;
+  }
+}
+```
 Task 9. You are given numbers“n” and “k”,write the program that
 k k k−1 k 0 n finds Cn(binomial coefficient) using formulaCn=Cn−1+Cn−1where Cn=Cn=1.
 Task 10. You are given “a” and “b”, write the function for finding GCD(a, b) using recursion. (Hint: Euclidean Algorithm)
